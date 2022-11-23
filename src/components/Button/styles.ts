@@ -8,8 +8,12 @@ const StyledButton = styled.button`
   cursor: pointer;
   transition: all 0.5s ease;
 
-  &:hover {
+  /* &:hover {
     opacity: 0.6;
+  } */
+
+  &:disabled {
+    opacity: 0.5;
   }
 `;
 

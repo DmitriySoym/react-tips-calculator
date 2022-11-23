@@ -1,9 +1,10 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
+
 body{
   margin: 0;
-  font-family: sans-serif;
+  font-family: cursive;
   box-sizing: border-box;
   background: #eaf2f2;
 }
@@ -28,6 +29,21 @@ input[type="number"]:focus {
     -moz-appearance: textfield;
 }
 
+input:focus::-webkit-input-placeholder {
+  color: transparent
+}
+
+input:focus:focus::-moz-placeholder {
+  color: transparent
+}
+
+input:focus:focus:-moz-placeholder {
+  color: transparent
+}
+
+input:focus:focus:-ms-input-placeholder {
+  color: transparent
+}
 
 input:focus,
 select:focus,
@@ -36,12 +52,14 @@ button:focus {
     outline: none;
 }
 
-.css-1okebmr-indicatorSeparator{
-  display: none;
-}
-.css-tlfecz-indicatorContainer
-{
+/* .css-1gtu0rj-indicatorContainer{
   color: rgba(117, 108, 108, 1);
   transform: translateX(-50px) scale(1.5);
 }
+
+.css-tlfecz-indicatorContainer,
+.css-tlfecz-indicatorContainer:focus{
+  color: rgba(117, 108, 108, 1);
+  transform: translateX(-50px) scale(1.5);
+} */
 `;

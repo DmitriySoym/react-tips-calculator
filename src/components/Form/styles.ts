@@ -19,7 +19,7 @@ const FormTitle = styled.h2`
 
 const TotalBlock = styled.div`
   margin: 45px 0;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 25px;
   line-height: 35px;
   display: flex;

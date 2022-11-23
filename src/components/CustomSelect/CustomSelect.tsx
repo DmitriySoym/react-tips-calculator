@@ -1,28 +1,16 @@
-import React from "react";
 import Select from "react-select";
-import { inherits } from "util";
+import { customStyles } from "./style";
+import { IInputSelectValue } from "../../types/types";
+import { options } from "../Form/Form";
 
-const options = [
-  { value: "10%", label: "10%" },
-  { value: "15%", label: "15%" },
-  { value: "20%", label: "20%" },
-];
-
-export const CustomSelect = () => {
+export const CustomSelect = ({ value, onChange }: IInputSelectValue) => {
   return (
     <Select
       options={options}
-      styles={{
-        control: (baseStyles, state) => ({
-          ...baseStyles,
-          borde: "none",
-          borderRadius: 35,
-          width: 456,
-          height: 68,
-          textAlign: "center",
-          outline: "none",
-        }),
-      }}
+      styles={customStyles}
+      isSearchable={false}
+      value={value}
+      onChange={onChange}
     />
   );
 };

@@ -1,17 +1,14 @@
-import React from "react";
 import { IInput } from "../../types/types";
 import { StyledInput } from "./styles";
 
-interface IProps {
-  inputAttributes: IInput;
-}
-
-export const Input = ({ inputAttributes }: IProps) => {
+export const Input = ({ placeholder, value, onChange, name }: IInput) => {
   return (
     <StyledInput
-      type={inputAttributes.type}
-      name={inputAttributes.name}
-      placeholder={inputAttributes.placeholder}
+      type="number"
+      placeholder={placeholder}
+      value={value}
+      onChange={onChange}
+      name={name}
     />
   );
 };
