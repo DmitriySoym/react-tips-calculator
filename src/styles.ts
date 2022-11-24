@@ -5,6 +5,14 @@ const Container = styled.div`
   width: 100%;
   height: 100%;
 
+  @media (max-width: 768px) {
+    padding-top: 236px;
+  }
+
+  @media (max-width: 479px) {
+    padding-top: 210px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -39,6 +47,11 @@ const Title = styled.h1`
   text-align: center;
   letter-spacing: -0.3px;
   color: #000000;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+    line-height: 35px;
+  }
 `;
 
 export { Title, Container };

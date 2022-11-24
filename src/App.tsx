@@ -1,9 +1,8 @@
-import React, { useState } from "react";
 import { Form } from "../src/components/Form/Form";
 import { Title, Container } from "./styles";
 import { GlobalStyle } from "./GlobalStyles";
 
-function App() {
+export const App = () => {
   return (
     <Container>
       <Title>Welcome to App</Title>
@@ -11,6 +10,4 @@ function App() {
       <GlobalStyle />
     </Container>
   );
-}
-
-export default App;
+};

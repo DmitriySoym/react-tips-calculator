@@ -1,5 +1,4 @@
 import styled from "styled-components";
-// import { IBaseStyle } from "../../types/types";
 
 const StyledInput = styled.input`
   width: 456px;
@@ -22,18 +21,11 @@ const StyledInput = styled.input`
   }
 
   @media (max-width: 768px) {
-    width: 331px;
+    max-width: 331px;
+    width: 100%;
     height: 68px;
-    margin-bottom: 17px;
+    margin: 0 auto 17px;
   }
 `;
 
 export { StyledInput };
-
-// const baseTheme: IBaseStyle = {
-//   media: {
-//     large: "(max-width: 960px)",
-//     medium: "(max-width: 720px)",
-//     small: "(max-width: 540px)",
-//   },
-// };

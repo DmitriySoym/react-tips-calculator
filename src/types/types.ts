@@ -1,21 +1,13 @@
-import React from "react";
+import { ChangeEvent } from "react";
 
 export interface IInput {
   placeholder: string;
   value: string | undefined;
-  onChange: any;
+  onChange: (e: ChangeEvent<HTMLInputElement>) => void;
   name: string;
 }
 
-export interface IInputSelectValue {
-  onChange: any;
-  value: { value: string; label: string };
-}
-
-export interface IBaseStyle {
-  media: {
-    large: string;
-    medium: string;
-    small: string;
-  };
+export interface IOption {
+  value: string;
+  label: string;
 }

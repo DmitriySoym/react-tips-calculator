@@ -8,12 +8,13 @@ const StyledButton = styled.button`
   cursor: pointer;
   transition: all 0.5s ease;
 
-  /* &:hover {
-    opacity: 0.6;
-  } */
-
   &:disabled {
     opacity: 0.5;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 321px;
+    width: 100%;
   }
 `;
 

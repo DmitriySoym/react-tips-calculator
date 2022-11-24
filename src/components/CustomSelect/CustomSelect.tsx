@@ -1,16 +1,13 @@
-import Select from "react-select";
+import Select, { ActionMeta } from "react-select";
+import { IOption } from "../../types/types";
 import { customStyles } from "./style";
-import { IInputSelectValue } from "../../types/types";
 import { options } from "../Form/Form";
 
-export const CustomSelect = ({ value, onChange }: IInputSelectValue) => {
-  return (
-    <Select
-      options={options}
-      styles={customStyles}
-      isSearchable={false}
-      value={value}
-      onChange={onChange}
-    />
-  );
+interface IProps {
+  onChange?: (newValue: unknown, actionMeta: ActionMeta<unknown>) => void;
+  value: IOption;
+}
+
+export const CustomSelect = (props: IProps) => {
+  return <Select options={options} isSearchable={false} styles={customStyles} {...props} />;
 };
