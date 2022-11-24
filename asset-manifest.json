@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/react-tips-calculator/static/js/main.4ea88049.js",
+    "static/media/buttonLogo.svg": "/react-tips-calculator/static/media/buttonLogo.e57e968340888d960ff4290ac63e17aa.svg",
+    "index.html": "/react-tips-calculator/index.html",
+    "main.4ea88049.js.map": "/react-tips-calculator/static/js/main.4ea88049.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.4ea88049.js"
+  ]
+}
