@@ -1,10 +1,10 @@
-import Select, { ActionMeta } from "react-select";
+import Select from "react-select";
 import { IOption } from "../../types/types";
 import { customStyles } from "./style";
 import { options } from "../Form/Form";
 
 interface IProps {
-  onChange?: (newValue: unknown, actionMeta: ActionMeta<unknown>) => void;
+  onChange: (event: unknown) => void;
   value: IOption;
 }
 

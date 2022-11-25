@@ -51,15 +51,4 @@ textarea:focus,
 button:focus {
     outline: none;
 }
-
-/* .css-1gtu0rj-indicatorContainer{
-  color: rgba(117, 108, 108, 1);
-  transform: translateX(-50px) scale(1.5);
-}
-
-.css-tlfecz-indicatorContainer,
-.css-tlfecz-indicatorContainer:focus{
-  color: rgba(117, 108, 108, 1);
-  transform: translateX(-50px) scale(1.5);
-} */
 `;

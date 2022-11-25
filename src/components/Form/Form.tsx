@@ -5,7 +5,6 @@ import { StyledForm, FormTitle, TotalBlock } from "./styles";
 import { useInput } from "../../hooks/useInput";
 import { useState, useEffect, SetStateAction } from "react";
 import { IOption } from "../../types/types";
-import { ActionMeta } from "react-select";
 
 export const options: IOption[] = [
   { value: "10%", label: "10%" },
@@ -19,8 +18,8 @@ export const Form = () => {
   const [total, setTotal] = useState(0);
   const [tips, setTips] = useState(options[0]);
 
-  const onChange = (e: IOption | any, actionMeta: ActionMeta<unknown>) => {
-    setTips(e);
+  const onChange = (newValue: unknown) => {
+    setTips(newValue as SetStateAction<IOption>);
   };
 
   useEffect(() => {
