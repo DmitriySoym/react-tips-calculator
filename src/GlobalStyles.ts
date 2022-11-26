@@ -1,11 +1,18 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
+HTML{
+  box-sizing: border-box;
+}
+
+*{
+  box-sizing: inherit;
+}
 
 body{
   margin: 0;
   font-family: cursive;
-  box-sizing: border-box;
+
   background: #eaf2f2;
 }
 

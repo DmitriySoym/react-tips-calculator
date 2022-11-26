@@ -1,13 +1,13 @@
-import { ReactComponent as ButtonIcon } from "../../assets/buttonLogo.svg";
+import { ReactComponent as ButtonIcon } from "../../assets/button-logo.svg";
 import { StyledButton } from "./styles";
 
 interface IProps {
-  disabled: boolean;
+  isDisabled: boolean;
 }
 
-export const Button = ({ disabled }: IProps) => {
+export const Button = ({ isDisabled }: IProps) => {
   return (
-    <StyledButton disabled={disabled} type="submit">
+    <StyledButton disabled={isDisabled} type="submit">
       <ButtonIcon />
     </StyledButton>
   );

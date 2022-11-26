@@ -1,6 +1,7 @@
 import { StylesConfig } from "react-select";
+import { IOption } from "../../types/types";
 
-const customStyles: StylesConfig = {
+const customStyles: StylesConfig<IOption> = {
   control: (baseStyles, state) => ({
     ...baseStyles,
     border: "none",

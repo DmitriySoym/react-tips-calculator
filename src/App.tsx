@@ -7,7 +7,6 @@ export const App = () => {
     <Container>
       <Title>Welcome to App</Title>
       <Form />
-      <GlobalStyle />
     </Container>
   );
 };
