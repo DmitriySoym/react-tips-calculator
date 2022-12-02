@@ -11,8 +11,7 @@ HTML{
 
 body{
   margin: 0;
-  font-family: cursive;
-
+  font-family:  sans-serif;
   background: #eaf2f2;
 }
 
